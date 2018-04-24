@@ -1,0 +1,2 @@
+load data infile '00Z.out' into table metar lines terminated by '\n';
+update metar set date=curdate() where date=0000-00-00;
